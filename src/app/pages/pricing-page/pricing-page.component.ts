@@ -21,6 +21,7 @@ export default class PricingPageComponent implements OnInit {
   private platformId = inject(PLATFORM_ID);
 
   ngOnInit(): void {
+    this.title.setTitle('Pricing Page');
     this.meta.updateTag({
       name: 'description',
       content: 'Pricing Description',

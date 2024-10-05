@@ -21,7 +21,7 @@ export class PokemonService {
       )
       .pipe(
         //agregar espera de 1 seg usando el operador de rxjs
-        delay(1000),
+        // delay(1000),
         map((resp) => {
           const simplePokemons: SimplePokemon[] = resp.results.map(
             (pokemon) => ({
