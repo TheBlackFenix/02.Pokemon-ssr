@@ -19,7 +19,7 @@ export default class ContactPageComponent implements OnInit {
   private meta = inject(Meta);
 
   ngOnInit(): void {
-    this.title.setTitle('About Page');
+    this.title.setTitle('Contact Page');
     this.meta.updateTag({
       name: 'description',
       content: 'Contact Page Description',
