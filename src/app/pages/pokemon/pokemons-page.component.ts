@@ -48,7 +48,7 @@ export default class PokemonsPageComponent {
   // }
 
   public loadPokemons(page = 0) {
-    const pageToLoad = this.currentPage()! + page;
+    const pageToLoad = this.currentPage()!;
     this.pokemonService
       .loadPage(pageToLoad)
       .pipe(
